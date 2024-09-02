@@ -3,9 +3,12 @@ all: build index.html
 clean:
 	rm -rf build
 
-# Rule to process each .md file into the build directory
-build: $(patsubst pages/%.md,build/%.html,$(wildcard pages/*.md))
+# Ensure the build directory exists
+build-dir:
 	mkdir -p build
+
+# Rule to process each .md file into the build directory
+build: build-dir $(patsubst pages/%.md,build/%.html,$(wildcard pages/*.md))
 	cp sources/*.css sources/*.js build/
 
 # Pattern rule to convert .md to .html
@@ -24,4 +27,4 @@ pages/.index.md: pages/*.md
 index.html: pages/.index.md build
 	pandoc --css reset.css --css index.css -s -o build/index.html pages/.index.md --template=sources/template.html
 
-.PHONY: all clean build
+.PHONY: all clean build build-dir
