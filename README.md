@@ -7,8 +7,7 @@ https://owickstrom.github.io/the-monospace-web/
 ## Build
 
 ```
-nix develop # or `direnv allow .`
-make
+run the main.py file
 ```
 
 ## License
