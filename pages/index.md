@@ -1,226 +1,88 @@
 ---
-title: The Monospace Web
-subtitle: A minimalist design exploration
-author: Oskar Wickström
-author_url: "https://wickstrom.tech"
-date: 2024-08-26
+title: Mono Blog
+subtitle: A little corner of the web
+author: Avi Perl
+author_url: "https://aviperl.me/"
+date: 2023-11-14
 lang: en
 toc_title: Contents
 version: v0.1.1
 ---
 
-## Introduction
+# DIY Camera Clip For Mirrorless & Film Cameras
 
-Monospace fonts are dear to many of us. 
-Some find them more readable, consistent, and beautiful, than their proportional alternatives.
-Maybe we're just brainwashed from spending years in terminals?
-Or are we hopelessly nostalgic?
-I'm not sure.
-But I like them, and that's why I started experimenting with all-monospace Web.
+_**Summery:**  An oversize pen-clip like attachment can be made with simple tools to attach mid-sized cameras to a pant
+pocket, removing the need for camera straps and other complicated hardware alternatives._
 
-On this page, I use a monospace grid to align text and draw diagrams.
-It's generated from a simple Markdown document (using Pandoc), and the CSS and a tiny bit of Javascript renders it on the grid.
-The page is responsive, shrinking in character-sized steps.
-Standard elements should _just work_, at least that's the goal.
-It's semantic HTML, rendered as if we were back in the 70s.
+After 6 years of total burnout from a career in commercial photography, an interest in taking photos has started to grow
+on me, this time in the form of film photography and film development. I've got a long term goal of taking photos of my
+children, developing the film, printing the photos in a darkroom, and then hanging them in hand built frames. (
+Full-stack photography?) To that end, I've started to take a camera with me when I take my children out to places.
 
-All right, but is this even a good idea?
-It's a technical and creative challenge and I like the aestethic.
-If you'd like to use it, feel free to fork or copy the bits you need, respecting the license.
-I might update it over time with improvements and support for more standard elements.
+### My goal
 
-## The Basics
+I'd like to be able to grab a camera and keep it with me while playing in a park, walking around a museum, and doing all
+the activities that dads do with their kids. It must not get in the way, must be comfortable, and be quick to access and
+put away. Modifying the camera is not allowed, and while blocking the film door is ok, ideally I'd like not to.
+Attaching something significant to the camera or elaborite setup is a no go, so that rules out options I like for SLR
+cameras like the [Capture from Peak Design](https://www.peakdesign.com/collections/clips/products/capture) or a camera
+strap,
+even [worn as a sling](https://www.peakdesign.com/cdn/shop/products/1-LIGHTBOX-1024x1024-SLIDE-BLACK-03_67e19b2f-600d-4ad5-bd21-df8fc5805649_1024x1024.jpg?v=1625162779). (
+Have you tried holding a toddler when in a sling?!)
 
-This document uses a few extra classes here and there, but mostly it's just markup.
-This, for instance, is a regular paragraph.
+## Attempt 0 - Cuff
 
-Look at this horizontal break:
+My first attempt at a solution was to use a [Peak Design Cuff](https://www.peakdesign.com/products/cuff) wrapped around
+my belt. This works really well as long as you do not move around. The camera swings from just walking, it is not easy
+to get on and off, and requires setup and a belt. This does not work when the kids are already in the car and I just
+remembered to grab a camera!
+![Cuff](https://user-images.githubusercontent.com/86095449/256680804-1dcce704-22db-4800-86a3-8ea6f4fe1918.png)
 
-<hr>
+## Attempt 1 - Pant Clips
 
-Lovely. We can hide stuff in the `<details`> element:
+Many cordless drills come with a belt clip so that you can take your drill with you, freeing your hands.
+![image](https://user-images.githubusercontent.com/86095449/256671552-a6a687e8-9dfa-4ef0-86f1-7ba08087edc3.png)
+This is nearly a perfect match to my requirements, but would not last a second when trying to catch up with a 2 year old
+while your 5 year old runs in the opposite direction! So I tried buying pocket clips online that I would somehow secure
+to the camera, but this was a dud. The size of the clips were too small and I did not feel remotely secure in hanging a
+heavy metal camera off of it.
 
-<details>
-<summary>A short summary of the contents</summary>
-<p>Hidden gems.</p>
-</details>
+## Attempt 3 - DIY Pant Clip
 
-## Lists
+I concluded that making my own clip was the way to go. While I do not have the tools to bend metal, I was aware that
+aluminum could be cut with woodworking tools. A quick search online told me that aluminum will crack from bending which
+caused me some concern, but in the end, it seems to work well enough for this application.
 
-This is a plain old bulleted list:
+This is not a step by step tutorial, looking at the end result kinda tells the full story. For the bar I
+used [1/2 inch aluminum bar stock](https://www.homedepot.com/p/Everbilt-1-2-in-x-36-in-Aluminum-Flat-Bar-with-1-16-in-Thick-800217/204604762).
+You will need some kind of 1/4 inch short screw as you'd find on a tripod plate, and a 1/4 drill bit. You will also need
+some way to cut the metal, such as a fine toothed saw, and you will likely need to break the sharp edges with a file or
+sandpaper. To bend the aluminum I used a combination of pressing the bar against a wall corner and hammering.
 
-* Banana
-* Paper boat
-* Cucumber
-* Rocket
+Each camera will almost definitely need a custom shape, start from your attachment point and figure out the line you
+want to run to get the bar to the clipping point, folding and bending as you go. The camera will be held at 2 points,
+one at the front of the clip, and at the deepest part of the clip. Hence, ideally, the longer the clip the better. A
+shorter clip will lead to the lower part of the camera body being able to bend away from your body.
 
-Ordered lists look pretty much as you'd expect:
+Note that if made as I have made it here, you will most likely scratch your camera. Perhaps some thin cork would help
+here.
 
-1. Goals
-1. Motivations
-    1. Intrinsic
-    1. Extrinsic
-1. Second-order effects
+![WhatsApp Image 2023-07-27 at 18 12 59](https://user-images.githubusercontent.com/86095449/256677777-ebabfb78-bb22-48d8-a551-bf45871e0048.png)
+![WhatsApp Image 2023-07-27 at 18 12 58](https://user-images.githubusercontent.com/86095449/256677789-7b037351-1b89-4eea-830c-0f20c56d4579.png)
 
-It's nice to visualize trees.
-This is a regular unordered list with a `tree` class:
+## Conclusion
 
-<ul class="tree"><li><p style="margin: 0;"><strong>/dev/nvme0n1p2</strong></p>
+In short, a clip made from an aluminum bar is a great way to make an always-attached pant clip for a film or mirrorless
+camera. This is working for me in regular pants, but better in jean style pockets. Best of all, especially for bending
+down, is putting it in the waist, though returning it there one handed is not as easy.
 
-* usr                               
-    * local                         
-    * share                         
-    * libexec                       
-    * include                       
-    * sbin                          
-    * src                           
-    * lib64                         
-    * lib                           
-    * bin                           
-    * games                         
-        * solitaire
-        * snake
-        * tic-tac-toe
-    * media                         
-* media                             
-* run                               
-* tmp                               
+![in use](https://user-images.githubusercontent.com/86095449/256727397-fd8f41b9-bfc2-449d-ba66-7f9075708f33.png)
 
-</li></ul>
+## Feedback
 
-## Tables
+If you try this, I'd love to hear what your experience is like! You may comment below
+or [contact me](https://aviperl.me/contact) directly.
 
-We can use regular tables that automatically adjust to the monospace grid.
-They're responsive. 
+## Bonus shot!
 
-<table>
-<thead>
-  <tr>
-    <th class="width-min">Name</th>
-    <th class="width-auto">Dimensions</th>
-    <th class="width-min">Position</th>
-  </tr>
-</thead>
-<tbody>
-  <tr>
-    <td>Boboli Obelisk</td>
-    <td>1.41m &times; 1.41m &times; 4.87m</td>
-    <td>43°45'50.78"N 11°15'3.34"E</td>
-  </tr>
-  <tr>
-    <td>Pyramid of Khafre</td>
-    <td>215.25m &times; 215.25m &times; 136.4m</td>
-    <td>29°58'34"N 31°07'51"E</td>
-  </tr>
-</tbody>
-</table>
-
-Note that only one column is allowed to grow.
-
-## Forms
-
-Here are some buttons:
-
-<nav>
-    <button>Reset</button>
-    <button>Save</button>
-</nav>
-
-And inputs:
-
-<form class="grid">
-<label>First name <input type="text" placeholder="Placeholder..." /></label>
-<label>Last name <input type="text" placeholder="Text goes here..." /></label>
-<label>Age <input type="text" value="30" /></label>
-</form>
-
-## Grids
-
-Add the `grid` class to a container to divide up the horizontal space evenly for the cells.
-Note that it maintains the monospace, so the total width might not be 100%.
-Here are six grids with increasing cell count:
-
-<div class="grid"><input readonly value="1" /></div>
-<div class="grid"><input readonly value="1" /><input readonly value="2" /></div>
-<div class="grid"><input readonly value="1" /><input readonly value="2" /><input readonly value="3" /></div>
-<div class="grid"><input readonly value="1" /><input readonly value="2" /><input readonly value="3" /><input readonly value="4" /></div>
-<div class="grid"><input readonly value="1" /><input readonly value="2" /><input readonly value="3" /><input readonly value="4" /><input readonly value="5" /></div>
-<div class="grid"><input readonly value="1" /><input readonly value="2" /><input readonly value="3" /><input readonly value="4" /><input readonly value="5" /><input readonly value="6" /></div>
-
-If we want one cell to fill the remainder, we set `flex-grow: 1;` for that particular cell.
-
-<div class="grid"><input readonly value="1" /><input readonly value="2" /><input readonly value="3!" style="flex-grow: 1;" /><input readonly value="4" /><input readonly value="5" /><input readonly value="6" /></div>
-
-## ASCII Drawings
-
-We can draw in `<pre>` tags using [box-drawing characters](https://en.wikipedia.org/wiki/Box-drawing_characters):
-
-```
-╭─────────────────╮
-│ MONOSPACE ROCKS │
-╰─────────────────╯
-```
-
-To have it stand out a bit more, we can wrap it in a `<figure>` tag, and why not also add a `<figcaption>`.
-
-<figure>
-<pre>
-┌───────┐ ┌───────┐ ┌───────┐
-│Actor 1│ │Actor 2│ │Actor 3│
-└───┬───┘ └───┬───┘ └───┬───┘
-    │         │         │    
-    │         │  msg 1  │    
-    │         │────────►│    
-    │         │         │    
-    │  msg 2  │         │    
-    │────────►│         │    
-┌───┴───┐ ┌───┴───┐ ┌───┴───┐
-│Actor 1│ │Actor 2│ │Actor 3│
-└───────┘ └───────┘ └───────┘</pre>
-<figcaption>Example: Message passing.</figcaption>
-</figure>
-
-Let's go wild and draw a chart!
-
-<figure><pre>
-                      Things I Have
-                                              
-    │                                     ████ Usable
-15  │
-    │                                     ░░░░ Broken
-    │
-12  │             ░            
-    │             ░            
-    │   ░         ░              
- 9  │   ░         ░              
-    │   ░         ░              
-    │   ░         ░                    ░
- 6  │   █         ░         ░          ░
-    │   █         ░         ░          ░
-    │   █         ░         █          ░
- 3  │   █         █         █          ░
-    │   █         █         █          ░
-    │   █         █         █          ░
- 0  └───▀─────────▀─────────▀──────────▀─────────────
-      Socks     Jeans     Shirts   USB Drives
-</pre></figure>
-
-## Media
-
-Media objects are supported, like images and video:
-
-![A room in an old French castle (2024)](castle.jpg)
-
-![[The Center of the Web (1914), Wikimedia](https://en.wikisource.org/wiki/Page:The_Center_of_the_Web_(1914).webm/11)](https://upload.wikimedia.org/wikipedia/commons/e/e0/The_Center_of_the_Web_%281914%29.webm)
-
-They extend to the width of the page, and add appropriate padding in the bottom to maintain the monospace grid.
-
-## Discussion
-
-That's it for now.
-I've very much enjoyed making this, pushing my CSS chops and having a lot of fun with the design.
-If you like it or even decide to use it, please [let me know](https://x.com/owickstrom).
-
-The full source code is here: [github.com/owickstrom/the-monospace-web](https://github.com/owickstrom/the-monospace-web)
-
-Finally, a massive shout-out to [U.S. Graphics Company](https://x.com/usgraphics) for all the inspiration.
+![PXL_20231105_155330111 PORTRAIT](https://user-images.githubusercontent.com/86095449/282676354-c10f6ac1-4bf9-4c38-bc62-e91b889e3977.jpg)
