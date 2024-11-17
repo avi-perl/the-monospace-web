@@ -80,8 +80,7 @@ down, is putting it in the waist, though returning it there one handed is not as
 
 ## Feedback
 
-If you try this, I'd love to hear what your experience is like! You may comment below
-or [contact me](https://aviperl.me/contact) directly.
+If you try this, I'd love to hear what your experience is like! You may [contact me](https://aviperl.me/contact) directly.
 
 ## Bonus shot!
 
