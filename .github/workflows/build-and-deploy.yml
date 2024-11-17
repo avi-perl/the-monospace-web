@@ -31,11 +31,16 @@ jobs:
         run: python main.py # Adjust path if needed
 
       # Step 5: Commit and push changes to "build" branch
-      - name: Commit and Push Changes
+      - name: Commit changes
         run: |
-          git config --global user.name "github-actions[bot]"
-          git config --global user.email "github-actions[bot]@users.noreply.github.com"
-          git checkout -B build
-          git add build/
-          git commit -m "Update build directory"
-          git push origin build --force
+          git config --global user.name "GitHub Actions"
+          git config --global user.email "actions@github.com"
+          git add -A
+          git commit -m "Auto-build: Commit changes after running make"
+          git push
+
+      - name: Deploy to GitHub Pages
+        uses: peaceiris/actions-gh-pages@v4
+        with:
+          github_token: ${{ secrets.GITHUB_TOKEN }}
+          publish_dir: build/  # The directory containing the index.html
